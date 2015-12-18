@@ -18,6 +18,10 @@
         font-size: 160%;
 				width: 70%;
 			}
+      ol.main{
+        font-size: 160%;
+        width: 70%;
+      }
 		</style>
   </head>
   
@@ -29,5 +33,79 @@
     <p class = "main">
       In this section I will go over the software that you will use to convert your current and future physical media (e.g. DVDs) into a digital format
       for consumption via Plex.
+    </p>
+    <h4>MakeMKV </h4>
+    <p class = "main"> 
+      This software will take your DVDs and Blue-Rays and convert them to a digital format onto your computer.
+    </p>
+    <ul class = "main">
+      <li> For Windows download click <a href = "http://www.makemkv.com/download/Setup_MakeMKV_v1.9.7.exe">here</a></li>
+      <li> For Mac download click <a href = "http://www.makemkv.com/download/makemkv_v1.9.7_osx.dmg">here</a></li>
+    </ul>
+    <p class = "main">
+      Install the software on your computer. The steps are the same as when you installed the Plex Media Server.
+      You can refer to those intructions <a href = "plex_setup.html#instructions">here</a>. Once you have installed the program, you 
+      may follow these instructions to convert your media. Note that these instructions are meant to be referenced once you are ready 
+      to begin creating your library. If you are following the guide for the first time, you may continue to install the next piece of 
+      software and then continue on to the Subcriptions section.
+    </p>
+    <ol class = "main">
+      <li> Run the program MakeMKV</li>
+      <li> Click on the "View" menu options then go to "Preferences"</li>
+      <li> Slect the "Semi-Auto" option</li>
+      <li> Click on the folder icon. This will bring up a window. Here you will select the "Plex Media" folder. Now, in the next step, you will 
+      always be brought to the "Plex Media" folder as your base option. Click "OK"</li>
+      <li> Click "OK" again</li>
+      <li> Insert your media into your disc drive in your computer</li>
+      <li> Click on the big "DVD" button in the middle of the program window to begin conversion</li>
+      <li> After a moment, a window will appear. Choose the titles you would like to save</li>
+
+      <ul>
+        <li> The title with the most chapters is the main movie. Everything else is trailers etc. Expand the title with the most
+        chapters and select which audio versions and subtitles you want</li>
+      </ul></br>
+
+      <li> For your Output folder, select the appropriate sub-folder (i.e. Movies or TV Shows)</li>
+      <li> Click on the "Save MKV" button to begin your process</li>
+
+      <ul>
+        <li> If a screen pops up asking to create a folder if it does not exist, click yes</li>
+      </ul></br>
+
+      <li> Wait for the process to finish</li>
+      <li> Once it has finsihed converting, go to the folder where you sent the converted file and rename it according to the 
+      guidelines set previously. You can reference them <a href = "plex_setup.html#naming">here</a></li>
+    </ol></br></br>
+
+    <p class = "main">
+      Now that you have successfully converted your media, you may find that the file size is too large to store many of them if you 
+      do not have a lot of storage space. That's where this next piece of software comes in. Handbrake will allow you to convert the file
+      you just created into a more compressed version.
+    </p>
+
+    <h4>Handbrake</h4>
+    <ul class = "main">
+      <li> For Windows download click <a href = "http://handbrake.fr/rotation.php?file=HandBrake-0.10.2-x86_64-Win_GUI.exe">here</a></li>
+      <li> For Mac download click <a href = "https://handbrake.fr/rotation.php?file=HandBrake-0.10.2-MacOSX.6_GUI_x86_64.dmg">here</a></li>
+    </ul>
+
+    <ol class = "main">
+      <li> Install the software</li>
+      <li> Run the software</li>
+      <li> Select "Presets" > Presets > High Profile</li>
+      <li> Select "Source" then choose "File"</li>
+      <li> Browse to where you saved your converted file from MakeMKV. Select it then click "Open"</li>
+      <li> For your Destination, click browse. The same location should appear</li>
+      <li> For the File Name, give it the same name as previously and click "Save"</li>
+      <li> Click "Start"</li>
+      <li> Once process has finished, you may close the program and delete the .mkv file as you have now created a more
+      compressed .mp4 version</li>
+    </ol>
+  </body>
+</html>
+
+
+
+
 
 
