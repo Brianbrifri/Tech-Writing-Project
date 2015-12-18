@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-    <title> Cutting The Cord </title>
+    <title> Home Page </title>
     <meta charset = "utf-8" />
 		<style>
-			p.test{
+      h3{
+        font-size: 160%;
+      }
+      h4{
+        font-size: 160%;
+      }
+			p.main{
+        font-size: 160%;
 				width: 70%;
 			}
-			ol.main{
+			ul.main{
+        font-size: 160%;
 				width: 70%;
 			}
 		</style>
@@ -15,20 +23,20 @@
   
   <body>
   <h1 align = "center"> CUTTING THE CORD </h1>
-  <h2 align = "center"><pre> INTRO    REQUIREMENTS    ECOSYSTEM    PLEX SETUP    RECEIVER SETUP    HARDWARE SETUP    SUBSCRIPTIONS    SOFTWARE </pre></h2>
+  <h2 align = "center"><pre> HOME PAGE    <a href = "plex_setup.html">PLEX SETUP</a>    <a href = "receiver_setup.html">RECEIVER SETUP</a>    HARDWARE SETUP    SUBSCRIPTIONS    SOFTWARE </pre></h2>
     </ br></ br>
     <h3> INTRO </h3>
-    <p class = "test">
+    <p class = "main">
       As pay TV is becoming more and more tedious to deal with, the move away from it and 
       towards an internet-based entertainment system is becoming more and more appealing 
       to people. This guide on how cutting the cord is going to show you how to do just that.
 
     </p>
-    <h3> Requirements </h3>
-    <p class = "test"> 
+    <h3> REQUIREMENTS </h3> 
+    <p class = "main"> 
       Before you get started on undertaking this project, there are a few things you will need be
       understand first. 
-      <ul> 
+      <ul class = "main"> 
         <li> Computer Knowledge: You will need to be familiar with using the internet browser, 
              connecting new devices to the internet, and creating accounts for new services. </li>
         <li> Less Live Viewing: Due to the nature of this setup, you will be forgoing some of the
@@ -36,7 +44,7 @@
       </ul>
 			</p>
 			<h3> ECOSYSTEM </h3>
-			<p class = "test">
+			<p class = "main">
 				Next we will need to figure out what ecosystem we will use, namely, Macintosh (Apple) based or Windows/Google based setup.
 				If you regularly use an iPhone and/or a Mac computer, then we will focus on setting up your system around Apple products.
 				If you use Android or Windows phones and use a PC with Windows operating system, then we will focus setting up your system
@@ -46,118 +54,7 @@
 				will use the Chromecast as our hardware receiver as it plays well with Android, Apple, and Windows phones as well as 
 				Windows based PCs.
 			</p>
-			<h3> PLEX SETUP </h3>
-			<p class = "test">
-				In this section, I am going to be showing you how to set up Plex on your Apple computer or PC. (Click HERE to jump to the
-				Apple computer setup).
-				</ br>
-				1. The first thing you will need to do is create an account with Plex. This will streamline the process of getting Plex up 
-				and running on your computer with the least amount of hassle. 
-				</ br>
-				<ol type = "A">
-					<li> Go to the <a href = "http://plex.tv/users/sign_up">Plex Sign Up</a> page </li>
-					<li> Enter in your email address, username (this will be visible in many locations throughout Plex's services), 
-					and password </li>
-					<li> Click on "Create Account" </li>
-					<li> Once you have done this, you will need to access your email to confirm your account by clicking on the link
-					in the email sent by Plex </li>
-				</ol>
-				</ br>
-        2. Here we will will take a moment to make sure you you have the appropriate file structure before continuing with 
-        the Plex installation.
-        <ol type = "A">
-          <li> Open up your File Explorer, the application that you use to browse for files</li>
-          <li> Browse to your "Videos" folder</li>
-          <li> "Right-click" and select "New" > "Folder"</li>
-          <li> Name it "Plex Media"</li>
-          <li> Press "Enter"</li>
-          <li> Double-click on the folder you just created</li>
-          <li> Make 3 more folders titled "Movies", "TV Shows", and "Home Videos"</li>
-          <li> A note on file naming and folder structure within the Plex Media Libraries</li>
-          <ul>
-            <li> The format for Movies is as follows:</li> 
-            <ul>
-              <li> Plex Media\[Movie_Name (Release_Year)]\[Movie_Name (Release_Year)].extension</li>
-              <li> e.g. Plex Media\Avatar (2009)\Avatar (2009).mp4</li>
-              <li> Creating the folder with the same name as the file allows you to keep you files more organized if you need to add 
-              subtitle files or other information for the movie</li>
-            </ul>
-            <li> The format for TV Shows is as follows:</li>
-            <ul>
-              <li> Plex Media\TV Shows\Show Name\Season\episodes</li>
-              <li> e.g. Plex Media\TV Shows\Game of Thrones\Season 01\Game of Thrones s01e01.mp4</li>
-              <li> You may also add in a folder for each episode much like you did for the movies: ...\Season 01\Game of Thrones s01e01\Game of Thrones
-              s01e01.mp4</li>
-            </ul>
-            <li> There is no set format for home videos. The use of sub-folders is completely up to you
-          </ul>
-          <li> After you have created the 3 folders, you may close the File Explorer window if you would like</li>
-        </ol>
-        </ br>
-				3. Next, you will need to download the server to install it on your computer. This server is an application that runs
-				in the background and provides you and the people you choose access to all of the media on your computer whether
-				you are at home on the road.
-				<ol type = "A">
-					<li> Go to <a href = "http://plex.tv/downloads">Plex Downloads</a> </li> 
-					<li> Click on "Computer" under the Plex Media Server option </li>
-					<li> Based on your operating system (Mac or Windows), you will be shown the corresponding download page. Click on "Download" to begin
-          the download (If you are given an option for a language, choose your language)
-				</ol>
-				</ br>
-				4. Now that you have downloaded the server, you will need to install it.
-				<ol type = "A"> 
-          <li> If you are running Windows Operating System:</li>
-            <ol type = "i">
-              <li> The downloaded file is an installer. Double-click on the downloaded file. A window will appear </li>
-				    	<li> Go through the install process as prompted by the software </li>
-			    		<li> Once the install process is complete, you will need to start the server. You will do this by:</li>
-			    		<ol type = "a">
-					    	<li> Holding the "Windows Key" and then pressing the "S" key and search window will appear</li>
-					    	<li> Type the words "plex" into the search bar. This will select the application that was just installed 
-					    	on your computer</li>
-					    	<li> Press "Enter"</li>
-				    	</ol>
-            </ol>
-          <li> If you are running OS X (Apple) Operating System:
-            <ol type = "i">
-              <li> The downloaded file is a .zip file. Unzip the file</li>
-              <li> Drag the Plex Media Server App to the "Applications" folder</li>
-              <li> Double-click the Plex Media Server app from the "Applications" folder</li>
-            </ol>
-          </ol>
-				</ol>
-				5. Now that you have the server up and running, you will need to begin the process of preparing your account for use. 
-				During this process, you will be logging into your account online and adding the locations of the media on your 
-				computer so that it will be visible to the plex server.
-        <ol type = "A">
-          <li> Log into your account online </li>
-          <ul>
-            <li> If a web page was launched after pressing "Enter" from the previous step, click on the circle in the top-right
-            corner of the page the click on "Sign In" </li>
-            <li> If a web page was NOT launched after pressing "Enter" from the previous step, go to the 
-            <a href = "https://plex.tv">Portal Login</a> and enter the credentials that you used to sign up with. After you 
-            have logged in, click on "Launch" in the top-right corner of the page.</li>
-          </ul>
-          <li> Add your media libraries (Repeat these steps to add multiple libraries i.e. Movies, TV Shows, Home Videos)</li>
-          <ol type = "A">
-            <li> On left left-hand side of the web page will be a divided column with the name of your computer listed. Click 
-            on the "+" icon next to your computer's name</li>
-            <li> Select your library type (You will be doing this multiple times for different types of media. Start with 
-            which ever one you would like)</li>
-            <li> You can then name the library if you wish. When you wish to proceed, click on "Next"</li>
-            <li> Here you will tell Plex where on your computer to look for your media</li>
-            <ol type = "i">
-              <li> Click on "Browse For Media Folder"</li>
-              <li> Browse to the appropriate folder that you created underneath the "Plex Media" folder i.e. if you are creating
-              a "Movie" library, select the folder Videos > Plex Media > Movies</li>
-              <li> Once you have selected the appropriate folder, click on "ADD"</li>
-            </ol>
-          </ol>
-
-
-
-
-
+      <h4> Continue to <a href = "plex_setup.html">Plex Setup</a> </h4>
 		</body>
 </html>
 
